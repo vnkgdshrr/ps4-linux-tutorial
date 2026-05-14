@@ -11,40 +11,36 @@ This is the section for recommended kernels. There are both vanilla kernels and 
 
 ::: details Read this if you're confused!
 ### Do kernel versions matter?
-Yes, but only for Baikal, as it has been stuck on 5.4 for a while and can't use modern GPU drivers anymore. For the rest, it doesn't matter.
-
-The community has moved on from 6.15 to 6.18, and now there is also active 7.0 kernel work for Aeolia and Belize. Baikal is still catching up.
+The community has moved on from 6.15 to 6.18, and now there is also active 7.0 kernel work for Aeolia and Belize. Baikal has now being ported to 7.0 after years of being stuck on 5.4 thanks to rmux.
 
 ### What about more performance?
-If all you care about is squeezing as much performance as possible out of the PS4 (you do) try the performance kernel section. Those have patches to make the system more responsive.
+The newest kernels are already built with all the necessary patches to make the console work as good as it can, so there's no need to modify anything anymore.
+LTO is a topic of debate, but both ThinLTO and FullLTO are good options.
 :::
 
 ### Kernel list
 These are normal general-use kernels with additional patches to make them work properly on the PS4.
 
-> [!tip]
-> Get the `bzImage_Clang_thinLTO`, if available. Some consoles may require the use of the `no-built-in-fw` variant.
+| Kernel Download                                                                                           | Compatible Southbridges           | Source Code                                         | Extra info                                                                                         |
+| --------------------------------------------------------------------------------------------------------- | --------------------------------- | --------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| [7.0](https://github.com/rmuxnet/ps4-linux-12xx)<br>*Recommended*                                         | Aeolia, Belize<br>(Baikal is WIP) | [GitHub](https://github.com/rmuxnet/ps4-linux-12xx) | 7.0 with a ton of fixes.<br>For Baikal, build from source or wait for a release.                   |
+| [6.18.21](https://github.com/rmuxnet/ps4-linux-12xx/releases/tag/6.18.21-April-3)                         | Aeolia, Belize                    | [GitHub](https://github.com/rmuxnet/ps4-linux-12xx) | Prebuilts are in the repo releases.                                                                |
+| [6.15.4](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v6.15.4__crashnt-4.7)                      | Aeolia, Belize                    | [GitHub](https://github.com/feeRnt/ps4-linux-12xx/) | LTO and other improvements.<br>**ThinLTO** recommended.<br>Some consoles may need `no-builtin-fw`. |
+| [5.15.15](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v5.15.15__obsidianx-4.0) <br> Belize Ver. | Belize                            | [GitHub](https://github.com/feeRnt/ps4-linux-12xx/) | Same as above. Might provide better performance than 6.15.4.                                       |
+| [5.4.247](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v5.4.247__neocine-1.1)                    | Baikal                            | [GitHub](https://github.com/feeRnt/ps4-linux-12xx/) | Specific for Baikal systems. Don't use on any other console!                                       |
 
-| Kernel Download                                                                                           | Compatible Southbridges | Source Code                                         | Extra info                                                                            |
-| --------------------------------------------------------------------------------------------------------- | ----------------------- | --------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| [7.0-Clean](https://github.com/rmuxnet/ps4-linux-12xx)                                                     | Aeolia, Belize          | [GitHub](https://github.com/rmuxnet/ps4-linux-12xx) | 7.0 work by rmux lives here.<br>Pick the branch or release you need from the repo.   |
-| [6.18.21](https://github.com/rmuxnet/ps4-linux-12xx) <br> (Recommended)                                    | Aeolia, Belize          | [GitHub](https://github.com/rmuxnet/ps4-linux-12xx) | Prebuilts are in the repo releases even if they are not marked latest.                |
-| [6.15.4](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v6.15.4__crashnt-4.7)                      | Aeolia, Belize          | [GitHub](https://github.com/feeRnt/ps4-linux-12xx/) | LTO and other improvements.<br>**ThinLTO** recommended.                               |
-| [5.15.15](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v5.15.15__obsidianx-4.0) <br> Belize Ver. | Belize                  | [GitHub](https://github.com/feeRnt/ps4-linux-12xx/) | Same as above. Might provide better performance than 6.15.4.                          |
-| [5.4.247](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v5.4.247__neocine-1.1)                    | Baikal                  | [GitHub](https://github.com/feeRnt/ps4-linux-12xx/) | Specific for Baikal systems. Don't use on any other console!                          |
-
+::: details More kernels
 ### Server kernels
 If you are using the PS4 as a server, use these instead of the normal desktop-oriented builds when available.
 
 > [!TIP]
 > Pair server kernels with the `128MB` server payload unless you have a specific reason not to.
 
-| Kernel Download                                                                                           | Compatible Southbridges | Source Code                                         | Extra info                                                                                                  |
-| --------------------------------------------------------------------------------------------------------- | ----------------------- | --------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| [6.18.21](https://github.com/rmuxnet/ps4-linux-12xx) <br> (Recommended)                                  | Aeolia, Belize          | [GitHub](https://github.com/rmuxnet/ps4-linux-12xx) | Contains the Strawberry server prebuilts in the repo releases.                        |
-| [7.0-Clean](https://github.com/rmuxnet/ps4-linux-12xx)                                                    | Aeolia, Belize          | [GitHub](https://github.com/rmuxnet/ps4-linux-12xx) | Newer 7.0 server work by rmux.<br>Use the repo to pick the branch or release you want. |
+| Kernel Download                                                         | Compatible Southbridges | Source Code                                         | Extra info                                                                             |
+| ----------------------------------------------------------------------- | ----------------------- | --------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| [7.0-Clean](https://github.com/rmuxnet/ps4-linux-12xx)                  | Aeolia, Belize          | [GitHub](https://github.com/rmuxnet/ps4-linux-12xx) | Newer 7.0 server work by rmux.<br>Use the repo to pick the branch or release you want. |
+| [6.18.21](https://github.com/rmuxnet/ps4-linux-12xx) <br> (Recommended) | Aeolia, Belize          | [GitHub](https://github.com/rmuxnet/ps4-linux-12xx) | Contains the Strawberry server prebuilts in the repo releases.                         |
 
-::: details More kernels
 ### Other kernels
 These are other kernels that you may want or need to use.
 
@@ -70,10 +66,6 @@ Also, you may want to read [this post](https://ps4linux.com/forums/d/93-tutorial
 :::
 ## Distros (that you ACTUALLY wanna use)
 Honestly there's a neptillion distros... If you're indecisive, click on all the links and check them out. Either way they are listed from most to least recommended.
-> [!DANGER]
-> If you have a Baikal console (many PS4 Pros are the Baikal variant) or are otherwise using the 5.4.x kernels, make sure your distro ships with Mesa version 25.1 or lower.
-> Newer versions are not supported on this Linux version, and so GPU acceleration will not work. See [this GitHub issue](https://github.com/feeRnt/ps4-linux-12xx/issues/8) or [this page to understand why](baikal).
->
 
 ::: details More about these distros
 Each distro has it's own pros and cons. But most of the difference on PS4 comes down to drivers; each distro requires it's own version of them and it can be a pain in the ass to install.

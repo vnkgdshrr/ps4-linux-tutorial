@@ -23,13 +23,12 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Getting started', link: '/information' },
+
       {
         text: 'Issues',
-        items: [
-          { text: 'General issues', link: '/issues' },
-          { text: 'Baikal specific issues', link: '/baikal' },
-        ]
+        link: '/issues',
       },
+
       {
         text: 'More goodies',
         items: [
@@ -66,6 +65,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: 'Post install setup', link: '/postinstall' },
+          { text: 'Common issues', link: '/issues' }
         ]
       },
       {
@@ -76,15 +76,7 @@ export default defineConfig({
           { text: 'Distro DIY', link: '/distrodiy' },
         ]
       },
-      {
-        text: '💔 Common issues',
-        collapsed: false,
-        items: [
-          { text: 'Common issues', link: '/issues' },
-          { text: 'Baikal issues', link: '/baikal' },
-        ]
-      }
-      ,
+
       {
         text: '☠️ Legacy Content',
         collapsed: true,

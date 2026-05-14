@@ -214,7 +214,7 @@ Thanks again to Qba for this [showcase](https://youtu.be/f_kXks8z9dc).
 Oh, and don't worry if you see that your installation is using a lot of memory. It's normal and is meant to happen in order to improve performance. Check this [link](https://linuxatemyram.com) to learn more.
 
 ## Get more CPU performance
-You may have realized that the PS4's CPU is pretty lacking and is most likely it's biggest disadvantage. But apart from a really optimized distro, what else can you do?
+You may have realized that the PS4's CPU is pretty lacking and is most likely it's biggest disadvantage. But apart from a really optimized kernel (which we already have), what else can you do?
 
 In computing you are always going to gain something and loose something else. Either your time, money, or in this case...
 

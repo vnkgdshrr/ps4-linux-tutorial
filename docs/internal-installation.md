@@ -11,9 +11,7 @@ next:
 Here you'll setup the internal HDD for installation of a Linux distro.
 
 > [!CAUTION]
-> Make sure you are NOT following this on a console with a Baikal southbridge.
-> 
-> If you proceed, either it won't boot, or you'll inevitably corrupt your whole drive and loose all your data!
+> Baikal internal installation is still unstable. Proceed with caution and make backups beforehand.
 
 > [!WARNING]
 > This shit is slow on an HDD. Be careful and prepare your balls for imminent explosion.

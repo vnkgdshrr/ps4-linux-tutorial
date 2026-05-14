@@ -24,6 +24,8 @@ These are the original kernel developers, who did the hard work to port the kern
 	- codedwrench (based on fail0verflow, psxitateam, eeply, valeryy, mircoho)
 - 6.15 kernel
 	- crashniels with 2 patches from mircoho (fastboot and ethernet kp fixes) (based on fail0verflow - psxitateam  - eeply - valeryy - mircoho - codedwrench)
+- 6.18 and 7.0 kernel
+	- patches from rmux, help from everyone in the ps4 abuse club
 
 If you want, you can check out their repos:
 - [marcan (fail0verflow) ](https://github.com/fail0verflow/ps4-linux)
@@ -44,12 +46,18 @@ If you want, you can check out their repos:
 	- Ported newer kernel versions.
 - [feeRnt](https://github.com/feeRnt/ps4-linux-12xx) (Package)
 	- Hosts and maintains the PS4 Linux kernel sources on GitHub.
+- [rmux](https://github.com/rmuxnet)
+	- Kernel 6.18.x and 7.x
+- leg
+	- Helped with kernel updates, Mesa driver testing, and much more
+- bzz
+	- Working on updated and fixed Mesa drivers
 
 ### Additional credits
 - [saya](https://www.youtube.com/@saya7068)
-	- For their great kernels and tutorials.
+	- For their kernels and tutorials.
 - [Qba](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw)
-	- For their constant updates and new distros.
+	- For their distros.
 - [triki1](https://www.youtube.com/@trakerchris9876)
 	- For their kernel and tutorials, distros and Mesa updaters.
 - [uar](https://uar.no/ps4/)

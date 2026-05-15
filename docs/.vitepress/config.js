@@ -89,7 +89,6 @@ export default defineConfig({
     cleanUrls: 'true',
 
     socialLinks: [
-      { icon: 'discord', link: 'https://discord.com/invite/QtcPmzHVVm' },
       { icon: 'discord', link: 'https://discord.gg/fZQScGvRQb' },
       { icon: 'github', link: 'https://github.com/DionKill/ps4-linux-tutorial/' },
     ],

@@ -35,21 +35,14 @@ However, every console has a different southbridge, and Baikal in particular has
 Here are some links you'll probably find useful. You can come back to them if needed.
 1. [PS4Linux Website](https://ps4linux.com)
 2. [PS4Linux Forums](https://ps4linux.com/forums/)
-3. YouTube
-	1. [Modded Warfare](https://www.youtube.com/@MODDEDWARFARE)
-	2. [Noob404 (PS4Linux Forums)](https://www.youtube.com/channel/UC9pY5BDCjDLOC4j-zkHPu8A)
-	3. [Qba](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw)
-4. Discord
-	1. [PS4Linux Forums' Discord server](https://discord.com/invite/QtcPmzHVVm)
+3. Discord
+	1. [Linux for PS4 Community](https://discord.gg/fZQScGvRQb)
+		1. New community created because the PS4Linux.com Discord is terrible
+	2. [PS4 Linux Fluxer](https://fluxer.gg/b7fFDGsY)
+		1. A Fluxer server, in case Discord were to become unavailable we got this
+	3. [PS4Linux Forums' Discord server](https://discord.com/invite/QtcPmzHVVm)
 		1. For general help regarding things not working
-	2. [tux4orbis](https://discord.gg/jebUjgBu6T)
-		1. More development focused
-	3. [PS4-LINUX](https://discord.gg/88ZrcmpJ) (saya's)
-		1. Mostly in French
-5. Other websites
-	1. [uar's archive](https://uar.no/ps4/)
-		1. Includes payloads, distros, and stuff per-southbridge
-6. Mental Health Institute of your choice (optional, if you feel overwhelmed)
+4. Mental Health Institute of your choice (optional, if you feel overwhelmed)
 
 ## Warning before you proceed
 

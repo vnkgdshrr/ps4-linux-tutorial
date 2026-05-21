@@ -37,7 +37,7 @@ Here are some links you'll probably find useful. You can come back to them if ne
 	1. [Linux for PS4 Community](https://discord.gg/fZQScGvRQb)
 		1. For general help regarding things not working, chatting, and a overall nice community :)
 	2. [PS4 Linux Fluxer](https://fluxer.gg/b7fFDGsY)
-		1. A Fluxer server, in case Discord were to become unavailable we got this
+		1. A Fluxer server, in case Discord were to become unavailable
 2. Mental Health Institute of your choice (optional, if you feel overwhelmed)
 
 ## Warning before you proceed

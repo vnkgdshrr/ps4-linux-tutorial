@@ -1,7 +1,5 @@
 # Getting the warez
 
-> [!WARNING]
-> I'm sorry if some of the following links are sketchy, but the community is a divided mess unfortunately. Refer to the [Other Issues](/issues#other-issues) section for a rant.
 ## Kernels
 Let's start with the kernels: they are very important as they have the software that controls all of the PS4's hardware. This is, by definition, Linux.
 
@@ -29,7 +27,7 @@ These are normal general-use kernels with additional patches to make them work p
 | [5.15.15](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v5.15.15__obsidianx-4.0) <br> Belize Ver. | Belize                            | [GitHub](https://github.com/feeRnt/ps4-linux-12xx/) | Same as above. Might provide better performance than 6.15.4.                                       |
 | [5.4.247](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v5.4.247__neocine-1.1)                    | Baikal                            | [GitHub](https://github.com/feeRnt/ps4-linux-12xx/) | Specific for Baikal systems. Don't use on any other console!                                       |
 
-::: details More kernels
+::: details Server kernels
 ### Server kernels
 If you are using the PS4 as a server, use these instead of the normal desktop-oriented builds when available.
 
@@ -40,15 +38,6 @@ If you are using the PS4 as a server, use these instead of the normal desktop-or
 | ----------------------------------------------------------------------- | ----------------------- | --------------------------------------------------- | -------------------------------------------------------------------------------------- |
 | [7.0-Clean](https://github.com/rmuxnet/ps4-linux-12xx)                  | Aeolia, Belize          | [GitHub](https://github.com/rmuxnet/ps4-linux-12xx) | Newer 7.0 server work by rmux.<br>Use the repo to pick the branch or release you want. |
 | [6.18.21](https://github.com/rmuxnet/ps4-linux-12xx) <br> (Recommended) | Aeolia, Belize          | [GitHub](https://github.com/rmuxnet/ps4-linux-12xx) | Contains the Strawberry server prebuilts in the repo releases.                         |
-
-### Other kernels
-These are other kernels that you may want or need to use.
-
-| Kernel Download                                                                                  | Compatible Southbridges | Source Code                                         | Extra info                                                                                                              |
-| ------------------------------------------------------------------------------------------------ | ----------------------- | --------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| [6.15,<br>5.15 and<br> 5.4](https://www.youtube.com/watch?v=zVzHzJT7dHk)                         | All                     | N/A                                                 | FullLTO, 120Hz support, 4K for PS4 Pro. You need to download the whole archive and pick one for your needs.<br>By saya. |
-| [6.15.4](https://mega.nz/folder/N0QjHSBT#609IHevkWEW0vnTCFW-Rhw)                                 | Aeolia &<br>Belize      | N/A?                                                | ZRAM, CachyOS patches, KVM and more. <br>By triki1.                                                                     |
-| [5.15.15](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v5.15.15__1.0.0) <br>Aeolia Ver. | Aeolia                  | [GitHub](https://github.com/feeRnt/ps4-linux-12xx/) | NOT RECOMMENDED.<br>Has half broken SATA/Bluray driver. Use for testing only.                                           |
 
 :::
 
@@ -75,13 +64,13 @@ Each distro has it's own pros and cons. But most of the difference on PS4 comes 
 You can of course use other distros, but you do run the risk of breaking your distro or having to reinstall everything when something needs updating, unless you know what you are doing.
 :::
 
-| Distro                                                                                              | Compatible Southbridge & Mesa     | Port credits                                    | Info                                                                                                                                                       |
-| --------------------------------------------------------------------------------------------------- | --------------------------------- | ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [CachyOS Light](https://ps4linux.com/forums/d/422-cachyos-light-lxqt-a-light-and-fast-distro)       | Aeolia, Belize<br>(Mesa 25.3.5)   | DionKill                                        | CachyOS, but without it running like crap. Automatic Mesa updates.<br>**Recommended.**                                                                     |
-| [Arch](https://github.com/ErkkolaMaitohappo/arch-ps4-aur-smth-fork/releases/)                       | Aeolia, Belize<br>(Mesa 25.3.3)   | [Erkkola](https://github.com/ErkkolaMaitohappo) | An Arch install with different desktops: KDE, XFCE or even TempleOS!                                                                                       |
-| [Arch - Baikal Ed.](https://mega.nz/file/JNkUgZLY#q-XwRcz81SLyMBE_-RIpbtRZIi2pGaH-8xCc6-uFXRI)      | Baikal<br>(Mesa 25.1)             | [deeWaardt](https://github.com/deWaardt)        | Test distro. Use this if you have a Baikal system.<br>[More info](https://discord.com/channels/969774306928251030/969782998029459486/1480523958817394698). |
-| [CachyOS "Strawberry" Server Edition](https://github.com/sony-jaguar-devs/distros/releases)         | Aeolia, Belize                    | [rmux](https://github.com/rmuxnet/)             | *For server use only*! It doesn't run any DE!                                                                                                              |
-| [JaguarLinux](https://ps4linux.com/forums/d/265-jaguarlinux-a-ps4-linux-only-distro-beta-release/3) | Aeolia, Belize<br>(Mesa 26-devel) | [TigerClips1](https://github.com/TigerClips1/)  | A distro made from scratch for the PS4! Void-based & in development. Worth a mention.                                                                      |
+| Distro                                                                                                         | Compatible Southbridge & Mesa     | Port credits                                    | Info                                                                                  |
+| -------------------------------------------------------------------------------------------------------------- | --------------------------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------- |
+| [CachyOS Light](https://ps4linux.com/forums/d/422-cachyos-light-lxqt-a-light-and-fast-distro)<br>*Recommended* | Aeolia, Belize<br>(Mesa 26.0.4)   | DionKill                                        | CachyOS, but without it running like crap. Automatic Mesa updates.                    |
+| [Arch](https://github.com/ErkkolaMaitohappo/arch-ps4-aur-smth-fork/releases/latest)                            | Aeolia, Belize<br>(Mesa 26.0.4)   | [Erkkola](https://github.com/ErkkolaMaitohappo) | An Arch install with different desktops: KDE, XFCE or even TempleOS!                  |
+| [Artix](https://github.com/ErkkolaMaitohappo/ps4-arch-based-distros/releases)                                  | Aeolia, Belize<br>(Mesa 26.0.4)   | [Erkkola](https://github.com/ErkkolaMaitohappo) | A distro not for noobies.                                                             |
+| [CachyOS "Strawberry" Server Edition](https://github.com/sony-jaguar-devs/distros/releases)                    | Aeolia, Belize                    | [rmux](https://github.com/rmuxnet/)             | *For server use only*! It doesn't run any DE!                                         |
+| [JaguarLinux](https://ps4linux.com/forums/d/265-jaguarlinux-a-ps4-linux-only-distro-beta-release/3)            | Aeolia, Belize<br>(Mesa 26-devel) | [TigerClips1](https://github.com/TigerClips1/)  | A distro made from scratch for the PS4! Void-based & in development. Worth a mention. |
 ### More distros
 Here are the distros that we can't recommend anymore, as they have been superseeded, or haven't had any major updates in a while.
 

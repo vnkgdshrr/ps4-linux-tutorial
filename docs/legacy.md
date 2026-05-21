@@ -13,12 +13,14 @@ These are additional kernels that are kind of up to date but also not really or 
 | Kernel version | Source and download                           | Compatible Southbridges    | Extra info                          |
 | -------------- | --------------------------------------------- | -------------------------- | ----------------------------------- |
 | 6.15.y         | [GitHub](https://github.com/crashniels/linux) | All, depends on the branch | No precompiled downloads available. |
-#### Really old kernels
-These kernels are so old that probably don't even boot anymore. Do not use these.
+#### Kernels to avoid
+This list contains kernels that you should be avoiding, with all due respect.
 
-| Kernel version | Source and download                                                                            | Compatible Southbridges | Extra info                  |
-| -------------- | ---------------------------------------------------------------------------------------------- | ----------------------- | --------------------------- |
-| 4.4<br>5.x     | Probably no source.<br>[Download](https://ps4linux.com/downloads/#PS4_Linux_Kernel_Downloads). | All                     | The old list from PS4Linux. |
+| Kernel version                                                           | Source and download                                                                            | Compatible Southbridges | Extra info                                                                                                              |
+| ------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------- | ----------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| [6.15,<br>5.15 and<br> 5.4](https://www.youtube.com/watch?v=zVzHzJT7dHk) | All                                                                                            | N/A                     | FullLTO, 120Hz support, 4K for PS4 Pro. You need to download the whole archive and pick one for your needs.<br>By saya. |
+| [6.15.4](https://mega.nz/folder/N0QjHSBT#609IHevkWEW0vnTCFW-Rhw)         | Aeolia &<br>Belize                                                                             | N/A?                    | ZRAM, CachyOS patches, KVM and more. <br>By triki1.                                                                     |
+| 4.4<br>5.x                                                               | Probably no source.<br>[Download](https://ps4linux.com/downloads/#PS4_Linux_Kernel_Downloads). | All                     | The old list from PS4Linux.                                                                                             |
 
 Credits for the kernels can be found [here](/ending#credits).
 #### Bootargs

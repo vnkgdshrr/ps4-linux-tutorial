@@ -14,7 +14,8 @@ After that, either launch your payload with a payload website to load them, or u
 
 > [!WARNING]
 > You MUST use a 1GB VRAM payload for installation and first boot. Afterwards, 2GB is recommended.
-
+> 
+> Do not use GoldHEN version v2.4b18.8, [update it](https://ko-fi.com/s/407bb9c94a)!
 
 Follow these steps:
 - Go to [psfree-enhanced.free.nf](http://psfree-enhanced.free.nf/)
@@ -31,6 +32,8 @@ Follow these steps:
 ::: details Alternative website (FW 5.05+)
 > [!WARNING]
 > You MUST use a 1GB VRAM payload for installation and first boot. Afterwards, 2GB is recommended.
+> 
+> Do not use GoldHEN version v2.4b18.8, [update it](https://ko-fi.com/s/407bb9c94a)!
 
 
 <img src="/screenshots/ps4boot-payloads.png" width="75%">

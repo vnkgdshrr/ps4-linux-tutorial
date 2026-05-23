@@ -34,6 +34,10 @@ Note down what you see in "Settings -> System Information":
 <img src="/screenshots/system-info.png" width="75%">
 
 ### HEN
+> [!WARNING]
+> You mustn't use GoldHEN v2.4b18.8 as it doesn't boot!
+> Always update to the latest version of [GoldHEN](https://ko-fi.com/s/407bb9c94a)!
+
 You need a system that is already jailbroken and has a homebrew enabler (such as GoldHEN or ps4hen) running.
 
 In order to input text on your PS4, you can't use the PS4 built in keyboard, as that is not available on Linux. You must have a keyboard and mouse combo ready to use with your PS4.
